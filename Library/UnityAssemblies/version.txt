@@ -1,0 +1,10 @@
+5.4.0f3:2.3.0.0
+StandaloneWindows
+C:/LeerJaar2/Editor/Data/Managed/UnityEngine.dll
+C:/LeerJaar2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
+C:/LeerJaar2/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
+C:/LeerJaar2/Editor/Data/Managed/UnityEditor.dll
+C:\LeerJaar2\Editor\Data\PlaybackEngines\AppleTVSupport\UnityEditor.iOS.Extensions.Common.dll
+C:\LeerJaar2\Editor\Data\PlaybackEngines\AppleTVSupport\UnityEditor.iOS.Extensions.Xcode.dll
+C:/LeerJaar2/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll
+C:/LeerJaar2/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll
