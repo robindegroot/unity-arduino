@@ -5,7 +5,7 @@ using System.IO.Ports;
 public class ArduinoScript : MonoBehaviour
 {
 
-    SerialPort stream = new SerialPort("COM3", 9600); 
+    SerialPort stream = new SerialPort("COM4", 9600); 
     float[] lastRot = { 0, 0, 0 }; //Need the last rotation to tell how far to spin the camera
 
 
@@ -17,11 +17,10 @@ public class ArduinoScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        string value = stream.ReadLine();
-        Debug.Log("test ");
-        Debug.Log(value);
+        string treatValue = stream.ReadLine();
+        Debug.Log(treatValue);
 
-        string[] vec3 = value.Split(','); //My arduino script returns a 3 part value (IE: 12,30,18)
+        string[] vec3 = treatValue.Split(','); //My arduino script returns a 3 part value (IE: 12,30,18)
         if (vec3[0] != "" && vec3[1] != "" && vec3[2] != "") //Check if all values are recieved
         {
             transform.Rotate(                  //Rotate the camera based on the new values
