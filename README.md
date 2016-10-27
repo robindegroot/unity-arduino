@@ -1,6 +1,7 @@
 # unity-arduino
 
 how to connect arduino and unity. 
+
 step 1. set up your arduino as shown on the pictures. 
 
 step 2. click on the link to codebender and copy the code https://codebender.cc/sketch:379584 
