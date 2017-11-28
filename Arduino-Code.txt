@@ -1,0 +1,60 @@
+
+float value = 0;
+boolean flip = false;
+int joyPin1 = 0;
+int joyPin2 = 1;
+int value1 = 0;
+int value2 = 0;
+
+
+void setup()
+{
+	Serial.begin(9600);
+}
+
+int treatValue(int data)
+{
+//	return (data * 9 / 1024) + 48;
+return map (data, 0 , 1023, 0 , 360);
+}
+void loop()
+{
+	value1 = analogRead(joyPin1);
+
+	delay(100);
+
+	value2 = analogRead(joyPin2);
+	Serial.print(treatValue(value1));//waarde 1
+	Serial.print(",");//separator
+	Serial.print(treatValue(value2));
+	Serial.print(",");//separator
+	Serial.println(255);
+	
+	/*if(value >= 1023)
+	{
+	    flip = true;
+	}else if(value <= 0)
+	{
+	    flip = false;
+	}
+
+	/*if(flip == false)
+	{
+	   value += 1;
+	}else{
+	   value -= 1;
+	}
+	*/
+	//float values[] = {0, 0, value1};
+
+//	Serial.flush(); //clears any possible left over information
+//	Serial.print(map(values[0], 0, 1023, 0, 360)); //Resizes values from the range on arduino input to 360 of rotation.
+//	Serial.print(",");
+	/* Serial.print(map(values[1],0,1023,0,360));
+	 Serial.print(",");
+	 Serial.print(map(values[2],0,1023,0,360));
+	 Serial.println();
+	*/
+	delay(10);
+
+}
